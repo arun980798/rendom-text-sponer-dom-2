@@ -10,19 +10,23 @@ button.addEventListener("click", () => {
   let b = Math.floor(Math.random() * 100);
   let c = Math.floor(Math.random() * 100);
   let d = Math.floor(Math.random() * 360);
+  let e = Math.floor(Math.random() * 360);
+  let f = Math.floor(Math.random() * 360);
+  let g = Math.floor(Math.random() * 360);
 
+button.style.background = `rgb(${e},${f},${g})`;
   let h3 = document.createElement("h1");
-  h3.style.color= "white";
+  h3.style.color = "white";
   h3.style.position = "absolute";
-  h3.style.top = b+"%";
-  h3.style.left = c+"%";
-  h3.style.rotate =d+"deg";
+  h3.style.top = b + "%";
+  h3.style.left = c + "%";
+  h3.style.rotate = d + "deg";
   h3.innerHTML = randomWords[a];
-setTimeout(()=>{
-  box.appendChild(h3);
-},800)
-
- setTimeout(()=>{
-  h3.style.display ="none";
- },b+"000")
+  h3.style.color = `rgb(${e},${f},${g})`;
+  setTimeout(() => {
+    box.appendChild(h3);
+  }, 800)
+  setTimeout(() => {
+    h3.style.display = "none";
+  }, b + "000")
 })

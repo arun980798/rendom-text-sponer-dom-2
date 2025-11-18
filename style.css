@@ -34,15 +34,18 @@ main button {
   color: var(--text-color);
   font-weight: 600;
   padding: 1rem 4rem;
+  position: relative;
   font-size: 3rem;
   border-radius: 10px;
   border: none;
   text-transform: uppercase;
   transition: all 200ms ease-in-out;
+  z-index: 300;
 }
 main button:active {
   scale: 95%;
 }
 main h1 {
   transition: all 200ms ease-in-out;
+  color: black;
 }/*# sourceMappingURL=style.css.map */
